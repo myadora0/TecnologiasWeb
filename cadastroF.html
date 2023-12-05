@@ -30,7 +30,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="curriculo.html">Cadastrar Funcionário</a>
+                        <a class="nav-link" href="curriculo.html">Cadastrar Funcionário</a>
                     </li>
 
                     <li class="nav-item">
@@ -47,47 +47,52 @@
 
           <!--container que abrigará o conteúdo da pagina-->
         <div style="background-color: white;">
-          <div class="container p-5">
-            <div class="container mt-3">
-                <h2>Funcionários:</h2>
-                <p>Lista de nomes e funcões de cada membro da loja:</p>            
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>Nome:</th>
-                      <th>Função:</th>
-                      <th>Email:</th>
-                    </tr>
-                  </thead>
+            
+            <div class="container text-center" style="margin-top: 30px; margin-bottom: 100px;">
+            <h1>Area de acesso ao sistema</h1>
 
-                    <tbody>
-                        <tr>
-                            <td>Matheus Felipe</td>
-                            <td>Faxineiro</td>
-                            <td>Matheus@example.com</td>
-                        </tr>
+            <form action="#" method="post" class="was-validated">
 
-                        <tr>
-                            <td>Mary Jane</td>
-                            <td>Recepcionista</td>
-                            <td>mary@example.com</td>
-                        </tr>
+                <div class="form-floating mb-3 mt-3">
+                    <input type="email" class="form-control" name="emailUsuario" placeholder="Informe o Email" required>
+                    <label for="emailUsuario">Email</label>
+                </div>
 
-                        <tr>
-                            <td>Sergio Foguetes</td>
-                            <td>Gerente</td>
-                            <td>Serjão@example.com</td>
-                        </tr>
-                    </tbody>
-                </table>
-              </div>
+                <div class="form-floating mb-3 mt-3">
+                    <input type="password" class="form-control" name="senhalUsuario" placeholder="Informe a Senha" required>
+                    <label for="senhalUsuario">Senha</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="tel" class="form-control" name="numeroUsuario" placeholder="Informe o numero de contato" required>
+                    <label for="numeroUsuario">Número telefone:</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" name="cpfUsuario" placeholder="Informe o CPF" required>
+                    <label for="cpfUsuario">CPF:</label>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <label for="comment">Suas qualidades:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                </div>
+
+                <div class="form-floating mb-3 mt-3">
+                    <input type="date" class="form-control" name="dataUsuario" placeholder="Informe a data de Nascimento" required>
+                    <label for="dataUsuario">Data de Nascimento:</label>
+                </div>
+
+                <button type="submit" name="btLogin" class="btn btn-primary">Login</button>
+                <a href="index.html" class="btn btn-primary">Registrar</a>
+
+
+
+                
+            </form>
             </div>
         </div>
 
-              <div>
-                <a href="cadastroF.html" class="btn btn-primary">Faça o seu</a>
-              </div>
-    
           <!--Rodapé da página-->
           <div class="container-fluid text-center fixed-bottom text-light" style="background-color: darkred; " >
             <p>
