@@ -30,11 +30,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="curriculo.html">Cadastrar Funcionário</a>
+                        <a class="nav-link active" href="curriculo.html">Cadastrar Funcionário</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="FormLogin.html">Login</a>
+                        <a class="nav-link" href="FormLogin.html">Login</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -46,26 +46,43 @@
           </nav>
 
           <!--container que abrigará o conteúdo da pagina-->
-        <div class="container text-center" style="margin-top: 30px; margin-bottom: 100px">
-            <h1>Area de acesso ao sistema</h1>
+          <div class="container p-5">
+            <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <form action="#" method="post" class="was-validated">
-
-                <div class="form-floating mb-3 mt-3">
-                    <input type="email" class="form-control" name="emailUsuario" placeholder="Informe o Email" required>
-                    <label for="emailUsuario">Email</label>
-                </div>
-
-                <div class="form-floating mb-3 mt-3">
-                    <input type="password" class="form-control" name="senhalUsuario" placeholder="Informe a Senha" required>
-                    <label for="senhalUsuario">Senha</label>
-                </div>
-
-                <button type="submit" name="btLogin" class="btn btn-primary">Login</button>
-                <button type="submit" name="btLogin" class="btn btn-primary" href="FormLogin.html">Registrar</button>
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
                 
-            </form>
-        </div>
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/mc1.webp" width="200" height="300" alt="McQueen" class="d-block w-100">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/mc2.jpg" width="200" height="300" alt="McQueen" class="d-block w-100">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="img/mc3.jpg" width="200" height="300" alt="McQueen" class="d-block w-100">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            
+            </div>
 
           <!--Rodapé da página-->
           <div class="container-fluid text-center fixed-bottom text-light" style="background-color: darkmagenta; " >
